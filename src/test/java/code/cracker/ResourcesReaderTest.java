@@ -1,5 +1,6 @@
 package code.cracker;
 
+import code.cracker.res.ResourcesReader;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

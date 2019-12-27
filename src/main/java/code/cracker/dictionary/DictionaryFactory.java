@@ -1,4 +1,7 @@
-package code.cracker;
+package code.cracker.dictionary;
+
+import code.cracker.exceptions.MyException;
+import code.cracker.res.ResourcesKeeper;
 
 import java.util.List;
 
@@ -13,7 +16,7 @@ public class DictionaryFactory {
             this.decryptionKeys = resourcesKeeper.getDecryptionKeys();
     }
 
-    public Dictionary create(String parameter) throws MyException{
+    public Dictionary create(String parameter) throws MyException {
         switch (parameter) {
             case "-e" :
                 return new Dictionary(alphabet, decryptionKeys);

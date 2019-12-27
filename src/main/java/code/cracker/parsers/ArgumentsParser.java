@@ -1,4 +1,6 @@
-package code.cracker;
+package code.cracker.parsers;
+
+import code.cracker.exceptions.MyException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,10 +11,10 @@ public class ArgumentsParser {
 
     private final static String PARAMETER = "-\\w";
 
-    public ArgsParserResult parse(String[] args) throws MyException{
+    public ParserResult parse(String[] args) throws MyException {
         String parameter = findParameter(args);
         String message = createMessage(args);
-        return new ArgsParserResult(parameter, message);
+        return new ParserResult(parameter, message);
     }
 
     private String createMessage(String[] args) {

@@ -1,4 +1,4 @@
-package code.cracker;
+package code.cracker.exceptions;
 
 public class MyException extends Exception {
 

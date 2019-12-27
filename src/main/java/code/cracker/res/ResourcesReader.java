@@ -1,4 +1,4 @@
-package code.cracker;
+package code.cracker.res;
 
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;

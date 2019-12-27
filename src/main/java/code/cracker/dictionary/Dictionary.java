@@ -1,4 +1,4 @@
-package code.cracker;
+package code.cracker.dictionary;
 
 import java.util.HashMap;
 import java.util.List;

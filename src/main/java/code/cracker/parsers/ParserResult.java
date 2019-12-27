@@ -1,12 +1,12 @@
-package code.cracker;
+package code.cracker.parsers;
 
-public class ArgsParserResult {
+public class ParserResult {
 
     private String parameter;
 
     private String message;
 
-    public ArgsParserResult(String parameter, String message) {
+    ParserResult(String parameter, String message) {
         this.parameter = parameter;
         this.message = message;
     }

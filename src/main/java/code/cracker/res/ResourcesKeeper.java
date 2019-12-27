@@ -1,4 +1,6 @@
-package code.cracker;
+package code.cracker.res;
+
+import code.cracker.exceptions.MyException;
 
 import java.util.List;
 
@@ -11,7 +13,7 @@ public class ResourcesKeeper {
     public ResourcesKeeper(ResourcesReader resourcesReader, String alphabetName, String decryptionName) throws MyException {
         this.alphabet = resourcesReader.read(alphabetName);
         this.decryptionKeys = resourcesReader.read(decryptionName);
-        if(alphabet.size() != decryptionKeys.size())
+        if (alphabet.size() != decryptionKeys.size())
             throw new MyException("Alphabet and decryption keys length must be same.");
     }
 
